@@ -1,0 +1,7 @@
+Drum, D
+Van,V
+Sucessful,s
+Triumph",m
+queenelizabeth,q
+poopooguys,o
+samosa,z
