@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.count.character.dao.CountCharacterDAOImpl;
+import com.count.character.model.CountCharacter;
 import com.count.character.model.CountInputBean;
 import com.count.character.service.CountCharacterService;
 
@@ -26,6 +27,9 @@ public class CountCharacterServiceImpl extends CountCharacterBase implements Cou
 	private HashMap<Integer, List<String>> innerMap = null;
 
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
+	
+	
+
 	/**
 	 * @return returns count of the number of occurrences of a particular
 	 *         character
@@ -72,6 +76,23 @@ public class CountCharacterServiceImpl extends CountCharacterBase implements Cou
 		writeOutputTOfile(outerList);
 		return outerList;
 
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public Integer CountCharacterSingleInput(CountCharacter cntChar){
+		return businessLogic.mainCountLogic(cntChar.getStringInput(),
+				cntChar.getCharInput());
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public String CountCharacterMultipleInput(){
+		return null;
 	}
 
 /*	public static void main(String[] args) {
