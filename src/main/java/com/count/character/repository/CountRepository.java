@@ -4,4 +4,4 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.count.character.model.CountCharacter;
 
-public interface CountRepository extends MongoRepository<CountCharacter, String> {} 
+public interface CountRepository extends MongoRepository<CountCharacter, String>,CountRepositoryCustom {} 

@@ -9,6 +9,13 @@ public class CountCharacter {
 	@Id
 	public String id;
 	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+
 	private String stringInput;
 	private char charInput;
 	
